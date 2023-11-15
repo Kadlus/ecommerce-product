@@ -1,0 +1,92 @@
+
+
+main {
+    padding-left: 200px;
+    padding-right: 200px;
+}
+.main-nav {
+    width: 100%;
+    padding: 10px;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+}
+
+.center-menu {
+    padding: 0;
+    display: flex;
+    width: 50%;
+    justify-content: left;
+}
+
+.menu-link {
+    list-style: none;
+    padding: 8px;
+}
+
+.logo {
+
+    width: 20%;
+}
+
+.shopping-container {
+    display: flex;
+    width: 25%;
+    justify-content: center;
+}
+
+.horizontal-line {
+    margin-top: 10px; /* Adjust the margin as needed */
+}
+
+.horizontal-line hr {
+    border: 0;
+    height: 1px;
+    background: #ccc; /* Color of the line */
+}
+
+.body-container {
+    width: 900px;
+    display: flex;
+    margin: auto;
+}
+
+.right-side {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 50px;
+}
+
+.left-side {
+    width: 50%;
+    padding-right: 50px;
+}
+
+.left-side img {
+    width: 100%;
+    height: 500px;
+    border-radius: 20px;
+}
+
+.price-container {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.price-container .row {
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.price-container .row span {
+    padding-right: 10px;
+}
+
+.cart-container {
+    display: flex;
+}
+
