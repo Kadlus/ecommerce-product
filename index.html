@@ -3,26 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- displays site properly based on user's device -->
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
     <link rel="stylesheet" href="assets/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Frontend Mentor | E-commerce product page</title>
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-        .attribution {
-            font-size: 11px;
-            text-align: center;
-        }
-
-        .attribution a {
-            color: hsl(228, 45%, 44%);
-        }
-    </style>
 </head>
 <body>
 <main>
     <header>
         <nav class="main-nav">
+            <div class="mobile-nav">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
             <div class="logo">
                 <img src="images/logo.svg" alt="logo">
             </div>
@@ -34,8 +28,8 @@
                 <li class="menu-link">Contact</li>
             </ul>
             <div class="shopping-container">
-                card icon
-                profile
+                <i class="fa fa-shopping-cart"></i>
+                <img src="images/image-avatar.png" alt="image-avatar">
             </div>
             <div class="horizontal-line">
                 <hr>
@@ -44,7 +38,17 @@
     </header>
     <div class="body-container">
         <div class="left-side">
-            <img src="images/image-product-1.jpg" alt="shoes">
+            <div class="preview-product">
+                <button id="prevBtn"><i class="fa fa-angle-left"></i></button>
+                <img src="images/image-product-1.jpg" alt="shoes" id="preview-product">
+                <button id="nextBtn"><i class="fa fa-angle-right"></i></button>
+            </div>
+            <div class="product-gallery">
+                <img src="images/image-product-1.jpg" alt="1" class="active">
+                <img src="images/image-product-2.jpg" alt="2">
+                <img src="images/image-product-3.jpg" alt="3">
+                <img src="images/image-product-4.jpg" alt="4">
+            </div>
         </div>
         <div class="right-side">
             <h2>Sneaker Company</h2>
@@ -53,28 +57,27 @@
                 durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
             <div class="price-container">
                 <div class="row">
-                    <span>$125.00</span>
-                    <span>50%</span>
+                    <span class="current-price">$125.00</span>
+                    <span class="current-discount">50%</span>
                 </div>
                 <div class="row">
-                    <span>$250.00</span>
+                    <span class="casual-price">$250.00</span>
                 </div>
             </div>
-            <div class="cart-container">
-                <button>-</button>
-                <label for="count"></label><input type="text" id="count">
-                <button>+</button>
-                <button>Add to cart</button>
+            <div class="card-container">
+                <form class="card-form">
+                    <div class="button-group">
+                        <input type="button" class="decrease-btn" id="plus-btn" value="-">
+                        <label for="count"></label><input type="text" id="count" minlength="1" min="1" value="1" required>
+                        <input type="button" class="increase-btn" id="minus-btn" value="+">
+                        <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i>Add to cart</button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
-
 </main>
 
-
-<div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
-</div>
+<script src="assets/script.js"></script>
 </body>
 </html>
