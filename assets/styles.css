@@ -42,6 +42,10 @@ main {
     color: #898990;
 }
 
+.menu-link:hover {
+    border-bottom: solid 2px #e08437;
+}
+
 .logo {
 
     width: 15%;
